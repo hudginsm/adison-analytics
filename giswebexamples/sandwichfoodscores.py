@@ -56,4 +56,4 @@ def create_map():
 class Default(WorkerEntrypoint):
     async def fetch(self, request):
         hearders = {"content-type": "text/html;charset=UTF-8"}
-        return Response(html, headers=headers)
+        return Response(create_map(), headers=headers)
